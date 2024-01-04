@@ -2,6 +2,7 @@ package com.devsuperior.demo.dto;
 
 import java.time.LocalDate;
 
+import com.devsuperior.demo.entities.City;
 import com.devsuperior.demo.entities.Event;
 
 public class EventDTO {
@@ -31,7 +32,10 @@ public class EventDTO {
 		cityId = entity.getCity().getId();
 	}
 
-	public Long getId() {
+    public EventDTO(City city) {
+    }
+
+    public Long getId() {
 		return id;
 	}
 
